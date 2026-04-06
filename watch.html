@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="LuxWatch">
+    <meta name="theme-color" content="#FAFAFA">
+    <link rel="manifest" href="manifest.json">
+    <title>Détail Montre | LuxWatch</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⌚</text></svg>">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <div class="logo-icon">⌚</div>
+            <div class="logo-text">LUX<span>WATCH</span></div>
+        </a>
+        
+        <div class="header-search">
+            <input type="text" placeholder="Rechercher une montre...">
+            <button>🔍</button>
+            <div class="search-suggestions"></div>
+        </div>
+        
+        <nav class="nav-links">
+            <a href="index.html">Accueil</a>
+            <a href="search.html?q=rolex">Rolex</a>
+            <a href="search.html?q=patek">Patek Philippe</a>
+            <a href="search.html?q=audemars">AP</a>
+        </nav>
+    </header>
+
+    <main class="watch-page">
+        <section class="watch-hero">
+            <div class="watch-gallery">
+                <img id="watch-main-image" class="watch-main-image" src="" alt="Montre">
+            </div>
+            
+            <div class="watch-info-full">
+                <div id="watch-brand" class="brand">Marque</div>
+                <h1 id="watch-name">Nom du modèle</h1>
+                <div id="watch-reference" class="reference">Référence</div>
+                
+                <p id="watch-description" class="watch-description">
+                    Description de la montre...
+                </p>
+                
+                <div class="specs-grid">
+                    <div class="spec-card">
+                        <div class="label">Diamètre</div>
+                        <div class="value" id="spec-diameter">-</div>
+                    </div>
+                    <div class="spec-card">
+                        <div class="label">Mouvement</div>
+                        <div class="value" id="spec-movement">-</div>
+                    </div>
+                    <div class="spec-card">
+                        <div class="label">Étanchéité</div>
+                        <div class="value" id="spec-water">-</div>
+                    </div>
+                    <div class="spec-card">
+                        <div class="label">Matériau</div>
+                        <div class="value" id="spec-material">-</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="similar-section">
+            <h2>Montres Similaires</h2>
+            <div class="similar-grid" id="similar-grid">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                    <div class="logo-icon">⌚</div>
+                    <div class="logo-text">LUX<span>WATCH</span></div>
+                </div>
+                <p>LuxWatch est le premier moteur de recherche dédié aux montres de luxe.</p>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Marques</h4>
+                <ul>
+                    <li><a href="search.html?q=rolex">Rolex</a></li>
+                    <li><a href="search.html?q=patek">Patek Philippe</a></li>
+                    <li><a href="search.html?q=audemars">Audemars Piguet</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Modèles</h4>
+                <ul>
+                    <li><a href="search.html?q=submariner">Submariner</a></li>
+                    <li><a href="search.html?q=daytona">Daytona</a></li>
+                    <li><a href="search.html?q=nautilus">Nautilus</a></li>
+                    <li><a href="search.html?q=royal oak">Royal Oak</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Informations</h4>
+                <ul>
+                    <li><a href="#">À propos</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 LuxWatch. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

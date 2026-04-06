@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="LuxWatch">
+    <meta name="theme-color" content="#FAFAFA">
+    <link rel="manifest" href="manifest.json">
+    <title>Résultats de recherche | LuxWatch</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⌚</text></svg>">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <div class="logo-icon">⌚</div>
+            <div class="logo-text">LUX<span>WATCH</span></div>
+        </a>
+        
+        <div class="header-search">
+            <input type="text" placeholder="Rechercher une montre...">
+            <button>🔍</button>
+            <div class="search-suggestions"></div>
+        </div>
+        
+        <nav class="nav-links">
+            <a href="index.html">Accueil</a>
+            <a href="search.html?q=rolex">Rolex</a>
+            <a href="search.html?q=patek">Patek Philippe</a>
+            <a href="search.html?q=audemars">AP</a>
+        </nav>
+    </header>
+
+    <main class="search-page">
+        <aside class="results-sidebar">
+            <div class="results-header">
+                <h2>Résultats</h2>
+                <span id="results-count">0</span> montres trouvées
+            </div>
+            <div class="results-list" id="results-list">
+            </div>
+        </aside>
+
+        <section class="detail-panel" id="detail-panel">
+            <div class="detail-placeholder">
+                <div class="icon">⌚</div>
+                <p>Sélectionnez une montre pour voir les détails</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/data.js"></script>
+    <script src="js/search.js"></script>
+</body>
+</html>

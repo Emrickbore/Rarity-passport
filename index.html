@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="LuxWatch">
+    <meta name="theme-color" content="#FAFAFA">
+    <link rel="manifest" href="manifest.json">
+    <title>LuxWatch - Moteur de Recherche de Montres de Luxe</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⌚</text></svg>">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <div class="logo-icon">⌚</div>
+            <div class="logo-text">LUX<span>WATCH</span></div>
+        </a>
+        
+        <div class="header-search">
+            <input type="text" placeholder="Rechercher une montre...">
+            <button>🔍</button>
+            <div class="search-suggestions"></div>
+        </div>
+        
+        <nav class="nav-links">
+            <a href="index.html">Accueil</a>
+            <a href="search.html?q=rolex">Rolex</a>
+            <a href="search.html?q=patek">Patek Philippe</a>
+            <a href="search.html?q=audemars">AP</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Découvrez l'Excellence <span>Horlogère</span></h1>
+            <p>Le moteur de recherche dédié aux montres de luxe</p>
+            
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" placeholder="Rechercher par nom ou référence (ex: Submariner, 116500LN...)">
+                    <button>RECHERCHER</button>
+                </div>
+                <div class="search-suggestions"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="categories">
+        <h2>Collections <span>Prestigieuses</span></h2>
+        
+        <div class="categories-grid">
+            <!-- Rolex -->
+            <div class="category-card rolex-card" data-brand="Rolex">
+                <div class="category-header">
+                    <div class="category-logo">R</div>
+                    <h3>ROLEX</h3>
+                    <p>La marque de montres la plus connue au monde. Symbole de réussite, réputée pour sa robustesse et sa valeur de revente.</p>
+                </div>
+                <div class="category-watches">
+                    <h4>Modèles Populaires</h4>
+                    <div class="watch-tags">
+                        <span class="watch-tag">Submariner</span>
+                        <span class="watch-tag">Daytona</span>
+                        <span class="watch-tag">Datejust</span>
+                        <span class="watch-tag">GMT-Master II</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-card patek-card" data-brand="Patek Philippe">
+                <div class="category-header">
+                    <div class="category-logo">PP</div>
+                    <h3>PATEK PHILIPPE</h3>
+                    <p>Le sommet de l'élégance et de la complication horlogère. Très prisée des collectionneurs.</p>
+                </div>
+                <div class="category-watches">
+                    <h4>Modèles Populaires</h4>
+                    <div class="watch-tags">
+                        <span class="watch-tag">Nautilus</span>
+                        <span class="watch-tag">Aquanaut</span>
+                        <span class="watch-tag">Calatrava</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-card ap-card" data-brand="Audemars Piguet">
+                <div class="category-header">
+                    <div class="category-logo">AP</div>
+                    <h3>AUDEMARS PIGUET</h3>
+                    <p>Célèbre pour son modèle octogonal iconique Royal Oak, symbole d'audace et d'innovation.</p>
+                </div>
+                <div class="category-watches">
+                    <h4>Modèles Populaires</h4>
+                    <div class="watch-tags">
+                        <span class="watch-tag">Royal Oak</span>
+                        <span class="watch-tag">Royal Oak Offshore</span>
+                        <span class="watch-tag">Code 11.59</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                    <div class="logo-icon">⌚</div>
+                    <div class="logo-text">LUX<span>WATCH</span></div>
+                </div>
+                <p>LuxWatch est le premier moteur de recherche dédié aux montres de luxe. Découvrez les plus belles pièces horlogères du monde.</p>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Marques</h4>
+                <ul>
+                    <li><a href="search.html?q=rolex">Rolex</a></li>
+                    <li><a href="search.html?q=patek">Patek Philippe</a></li>
+                    <li><a href="search.html?q=audemars">Audemars Piguet</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Modèles</h4>
+                <ul>
+                    <li><a href="search.html?q=submariner">Submariner</a></li>
+                    <li><a href="search.html?q=daytona">Daytona</a></li>
+                    <li><a href="search.html?q=nautilus">Nautilus</a></li>
+                    <li><a href="search.html?q=royal oak">Royal Oak</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Informations</h4>
+                <ul>
+                    <li><a href="#">À propos</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Mentions légales</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 LuxWatch. Tous droits réservés. Site de démonstration.</p>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
